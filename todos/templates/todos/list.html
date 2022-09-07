@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>My Lists</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number of items</th>
+                    </tr>
+                    {% for todo in todolist_list %}
+                    <tr>
+                        <td>{{ todo.name }}</td>
+                        <td>coming soon</td>
+                    </tr>
+                    {% endfor %}
+                </thead>
+            </table>
+        </div>
+
+    </main>
+    
+</body>
+</html>
+
