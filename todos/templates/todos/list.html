@@ -15,8 +15,10 @@
                     </tr>
                     {% for todo in todolist_list %}
                     <tr>
-                        <td>{{ todo.name }}</td>
-                        <td>coming soon</td>
+                        <td>
+                            <a href="{% url 'todo_list_detail' todo.pk %}">{{ todo.name }}</a>
+                        </td>
+                        <td>{{ todo.items.all|length }}</td>
                     </tr>
                     {% endfor %}
                 </thead>
