@@ -21,8 +21,10 @@
             <tbody>
                 {% for todoitem in todolist.items.all %}
                 <tr>
-                    <td>{{todoitem.task}}</td>
-                    <td>{{todoitem.due_date}}</td>
+                    <td>
+                        <a href="{% url 'todo_item_update' todoitem.pk %}">{{ todoitem.task }}</a>
+                    </td>
+                    <td>{{ todoitem.due_date }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
