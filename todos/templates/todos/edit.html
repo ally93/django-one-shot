@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <main>
+        <div>
+            <h1>Update list</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button>Update</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -3,6 +3,9 @@
 <body>
     <main>
         <h1>{{todolist.name}}</h1>
+        <p>
+            <a href="{% url 'todo_list_update' todolist.pk %}">Edit</a>
+        </p>
         <h2>Tasks</h2>
         <table>
             <thead>
